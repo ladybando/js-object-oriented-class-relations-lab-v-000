@@ -14,13 +14,22 @@ class Driver {
     // insert in the user to the store
     store.drivers.push(this);
   }
-      passenger() {
-        return store.passengers.filter(
-            function(passenger) {
-                return passenger.userId === this.id;
-            }.bind(this)
-        );
-    }
+
+	trips () {
+		return store.trips.filter(
+			function(trip) {
+				return trip.driverId === this.id;
+			}.bind(this)
+		)
+	}
+
+	passengers () {
+		return this.trips().map(
+			function(trip) {
+				return trip.passenger();
+			}
+		)
+	}
 }
 
 class Passenger {
