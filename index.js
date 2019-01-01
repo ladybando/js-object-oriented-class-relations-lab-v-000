@@ -14,6 +14,8 @@ class Driver {
     // insert in the user to the store
     store.drivers.push(this);
   }
+  
+  
 }
 
 class Passenger {
