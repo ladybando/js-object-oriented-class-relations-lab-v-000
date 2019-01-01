@@ -26,7 +26,7 @@ class Passenger {
     }
  
     // insert in the item to the store
-    store.passengers.push(this);
+    store.passenger.push(this);
   }
   setDriver(driver){
     this.driverId = driver.id;
