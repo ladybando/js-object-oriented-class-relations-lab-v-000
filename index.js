@@ -34,6 +34,6 @@ class Trip {
 
  
     // insert in the item to the store
-    store.passengers.push(this);
+    store.trips.push(this);
   }
 }
