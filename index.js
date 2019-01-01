@@ -17,7 +17,7 @@ class Driver {
 }
 
 class Passenger {
-  constructor(price, name){
+  constructor(name){
     this.id = ++passengerId;
     this.name = name;
 
