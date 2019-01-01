@@ -7,20 +7,19 @@ let passengerId = 0;
 let tripId = 0;
 
 class Driver {
-  constructor(name){
-    this.id = ++driverId;
-    this.name = name;
- 
-    // insert in the user to the store
-    store.drivers.push(this);
-  }
+	constructor(name) {
+		this.id = ++driverId;
+		this.name = name;
+
+		store.drivers.push(this);
+	}
 
 	trips () {
 		return store.trips.filter(
 			function(trip) {
 				return trip.driverId === this.id;
 			}.bind(this)
-		);
+		)
 	}
 
 	passengers () {
@@ -28,9 +27,9 @@ class Driver {
 			function(trip) {
 				return trip.passenger();
 			}
-		);
+		)
 	}
-}
+ }
 
 class Passenger {
   constructor(name){
