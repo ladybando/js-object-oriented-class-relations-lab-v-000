@@ -36,5 +36,11 @@ class Trip {
     store.trips.push(this);
   }
   
-  
+      passengers() {
+        return store.items.filter(
+            function(item) {
+                return item.userId === this.id;
+            }.bind(this)
+        );
+    }
 }
