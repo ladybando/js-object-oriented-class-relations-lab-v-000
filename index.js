@@ -15,7 +15,7 @@ class Driver {
     store.drivers.push(this);
   }
       passengers() {
-        return store.items.filter(
+        return store.trips.filter(
             function(item) {
                 return item.userId === this.id;
             }.bind(this)
