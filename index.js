@@ -37,7 +37,7 @@ class Trip {
   }
   
       passenger() {
-        return store.s.filter(
+        return store.passenger.find(
             function(item) {
                 return item.userId === this.id;
             }.bind(this)
