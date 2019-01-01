@@ -20,7 +20,7 @@ class Driver {
 			function(trip) {
 				return trip.driverId === this.id;
 			}.bind(this)
-		)
+		);
 	}
 
 	passengers () {
@@ -28,7 +28,7 @@ class Driver {
 			function(trip) {
 				return trip.passenger();
 			}
-		)
+		);
 	}
 }
 
@@ -41,6 +41,9 @@ class Passenger {
     // insert in the item to the store
     store.passengers.push(this);
   }
+  
+  
+  
 }
 
 class Trip {
