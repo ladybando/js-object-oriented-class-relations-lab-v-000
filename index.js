@@ -41,6 +41,10 @@ class Passenger {
     store.passengers.push(this);
   }
   
+      setUser(user) {
+        this.userId = user.id;
+  }
+  
   	trips () {
 		return store.trips.filter(
 			function(trip) {
