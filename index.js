@@ -42,7 +42,7 @@ class Passenger {
   }
   
       setTrip(trip) {
-        this.userId = user.id;
+        this.tripId = trip.id;
   }
   
   	trips () {
