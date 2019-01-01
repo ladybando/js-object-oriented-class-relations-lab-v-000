@@ -17,13 +17,10 @@ class Driver {
 }
 
 class Passenger {
-  constructor(price, name, driver){
+  constructor(price, name){
     this.id = ++passengerId;
     this.name = name;
-    this.price = price;
-    if(driver){
-      this.setDriver(driver);
-    }
+
  
     // insert in the item to the store
     store.passengers.push(this);
