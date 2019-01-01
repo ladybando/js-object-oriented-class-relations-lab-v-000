@@ -8,7 +8,7 @@ let tripId = 0;
 
 class Driver {
   constructor(name){
-    this.id = ++userId;
+    this.id = ++driverId;
     this.name = name;
  
     // insert in the user to the store
