@@ -14,10 +14,10 @@ class Driver {
     // insert in the user to the store
     store.drivers.push(this);
   }
-      trips() {
-        return store.trips.filter(
-            function(trip) {
-                return trip.userId === this.id;
+      passenger() {
+        return store.passengers.filter(
+            function(pass) {
+                return pass.userId === this.id;
             }.bind(this)
         );
     }
