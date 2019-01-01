@@ -19,7 +19,7 @@ class Driver {
 			function(trip) {
 				return trip.driverId === this.id;
 			}.bind(this)
-		)
+		);
 	}
 
 	passengers () {
@@ -27,7 +27,7 @@ class Driver {
 			function(trip) {
 				return trip.passenger();
 			}
-		)
+		);
 	}
  }
 
@@ -44,7 +44,7 @@ class Driver {
 			function(trip) {
 				return trip.passengerId === this.id;
 			}.bind(this)
-		)
+		);
 	}
 
 	drivers () {
@@ -52,7 +52,7 @@ class Driver {
 			function(trip) {
 				return trip.driver();
 			}
-		)
+		);
 	}
 }
 
@@ -69,7 +69,7 @@ class Driver {
 			function(driver) {
 				return driver.id === this.driverId;
 			}.bind(this)
-		)
+		);
 	}
 
 	passenger () {
@@ -77,6 +77,6 @@ class Driver {
 			function(passenger) {
 				return passenger.id === this.passengerId;
 			}.bind(this)
-		)
+		);
 	}
 }
