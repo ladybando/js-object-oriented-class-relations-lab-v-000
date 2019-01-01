@@ -30,3 +30,7 @@ class Passenger {
     this.driverId = driver.id;
   }
 }
+
+class Trip {
+  
+}
